@@ -1,4 +1,0 @@
-git add -A / filename   增加文件到缓存库
-git commit -m 'message' 提交到缓存库
-git push origin master  提交到 github
-git status              查看 文件状态
