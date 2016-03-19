@@ -127,7 +127,7 @@ switch (ENVIRONMENT)
  *
  * NO TRAILING SLASH!
  */
-	$application_folder = '../Ylog';
+	$application_folder = '../Ylog/admin/';
 
 /*
  *---------------------------------------------------------------

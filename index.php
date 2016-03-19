@@ -113,7 +113,7 @@ switch (ENVIRONMENT)
  *
  * NO TRAILING SLASH!
  */
-	$application_folder = 'application';
+	$application_folder = 'Ylog';
 
 /*
  *---------------------------------------------------------------
@@ -128,8 +128,10 @@ switch (ENVIRONMENT)
  *
  * NO TRAILING SLASH!
  */
-	$view_folder = '';
+	$view_folder = 'template/';
 
+
+	define('SITEPATH', $_SERVER['REQUEST_SCHEME'].'://'.$_SERVER['HTTP_HOST']);
 
 /*
  * --------------------------------------------------------------------

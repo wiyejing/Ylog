@@ -11,7 +11,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <span class="fl" style="line-height: 24px;font-size: 16px"><b>网站后台管理系统</b></span>
 
     <span style="line-height: 24px;padding-right: 20px">欢迎 <?php echo $cname; ?>!</span>
-    <a href="#" class="easyui-linkbutton" data-options="plain:true">网站前台</a>
+    <a href="/" class="easyui-linkbutton" data-options="plain:true">网站前台</a>
 
     <select class="easyui-combobox" name="language" data-options="width:70,panelHeight:50,onChange:function(new_v,old_v){try{setLanguage(new_v);}catch(e){}}">
       <option value="zh" selected="selected">中文版</option>

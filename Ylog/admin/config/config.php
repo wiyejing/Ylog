@@ -17,8 +17,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | environments.
 |
 */
-$config['base_url'] = SITEPATH;
-// $config['base_url'] = 'http://ylog.iyejing.cn';
+$config['base_url'] = SITEPATH.'/admin';
+// $config['base_url'] = 'http://ylog.iyejing.cn/admin';
 /*
 |--------------------------------------------------------------------------
 | Index File
