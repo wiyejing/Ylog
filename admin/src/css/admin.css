@@ -1,0 +1,18 @@
+@charset "UTF-8";
+/**
+ * 后台样式
+ * @authors Jim Yeah (yejing@live.cn)
+ * @Copyright (c) 2015 http://www.iyejing.cn All rights reserved.
+ */
+.pr20{padding-right: 20px;}
+.pr10{padding-right: 10px;}
+.pl20{padding-left: 20px;}
+.pl10{padding-left: 10px;}
+.fl{float: left;}
+.fr{float: right;}
+
+.doc_table{width: 100%;}
+.doc_table input{width: 400px;}
+.none{display: none; }
+
+#sns input{width: 400px;}

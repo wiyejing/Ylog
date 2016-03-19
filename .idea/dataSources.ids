@@ -1,0 +1,1992 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - mvc@localhost" uuid="d02b166b-34d2-493e-a0b9-434ec98c3473">
+    <database-info product="MySQL" version="5.5.40" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.5">
+      <schema id="1" name="mvc"/>
+      <table id="2" parent="1" name="uc_admins"/>
+      <table id="3" parent="1" name="uc_applications"/>
+      <table id="4" parent="1" name="uc_badwords"/>
+      <table id="5" parent="1" name="uc_domains"/>
+      <table id="6" parent="1" name="uc_failedlogins"/>
+      <table id="7" parent="1" name="uc_feeds"/>
+      <table id="8" parent="1" name="uc_friends"/>
+      <table id="9" parent="1" name="uc_mailqueue"/>
+      <table id="10" parent="1" name="uc_memberfields"/>
+      <table id="11" parent="1" name="uc_members"/>
+      <table id="12" parent="1" name="uc_mergemembers"/>
+      <table id="13" parent="1" name="uc_newpm"/>
+      <table id="14" parent="1" name="uc_notelist"/>
+      <table id="15" parent="1" name="uc_pm_indexes"/>
+      <table id="16" parent="1" name="uc_pm_lists"/>
+      <table id="17" parent="1" name="uc_pm_members"/>
+      <table id="18" parent="1" name="uc_pm_messages_0"/>
+      <table id="19" parent="1" name="uc_pm_messages_1"/>
+      <table id="20" parent="1" name="uc_pm_messages_2"/>
+      <table id="21" parent="1" name="uc_pm_messages_3"/>
+      <table id="22" parent="1" name="uc_pm_messages_4"/>
+      <table id="23" parent="1" name="uc_pm_messages_5"/>
+      <table id="24" parent="1" name="uc_pm_messages_6"/>
+      <table id="25" parent="1" name="uc_pm_messages_7"/>
+      <table id="26" parent="1" name="uc_pm_messages_8"/>
+      <table id="27" parent="1" name="uc_pm_messages_9"/>
+      <table id="28" parent="1" name="uc_protectedmembers"/>
+      <table id="29" parent="1" name="uc_settings"/>
+      <table id="30" parent="1" name="uc_sqlcache"/>
+      <table id="31" parent="1" name="uc_tags"/>
+      <table id="32" parent="1" name="uc_vars"/>
+      <table id="33" parent="1" name="ylog_category">
+        <comment>分类表</comment>
+      </table>
+      <table id="34" parent="1" name="ylog_config">
+        <comment>站点配置</comment>
+      </table>
+      <table id="35" parent="1" name="ylog_document">
+        <comment>文档模型表</comment>
+      </table>
+      <table id="36" parent="1" name="ylog_member">
+        <comment>用户表</comment>
+      </table>
+      <table id="37" parent="1" name="ylog_menu"/>
+      <table id="38" parent="1" name="ylog_url">
+        <comment>链接表</comment>
+      </table>
+      <column id="39" parent="2" name="uid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="40" parent="2" name="username">
+        <mandatory>1</mandatory>
+        <data-type>char(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="41" parent="2" name="allowadminsetting">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="42" parent="2" name="allowadminapp">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="43" parent="2" name="allowadminuser">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="44" parent="2" name="allowadminbadword">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="45" parent="2" name="allowadmintag">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="46" parent="2" name="allowadminpm">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="47" parent="2" name="allowadmincredits">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="48" parent="2" name="allowadmindomain">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="49" parent="2" name="allowadmindb">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="50" parent="2" name="allowadminnote">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="51" parent="2" name="allowadmincache">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="52" parent="2" name="allowadminlog">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="53" parent="2" name="username">
+        <columns>username</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="54" parent="2" name="PRIMARY">
+        <columns>uid</columns>
+        <primary>1</primary>
+      </key>
+      <key id="55" parent="2" name="username">
+        <columns>username</columns>
+        <underlying-index>username</underlying-index>
+      </key>
+      <column id="56" parent="3" name="appid">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6) unsigned</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="57" parent="3" name="type">
+        <mandatory>1</mandatory>
+        <data-type>varchar(16)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="58" parent="3" name="name">
+        <mandatory>1</mandatory>
+        <data-type>varchar(20)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="59" parent="3" name="url">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="60" parent="3" name="authkey">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="61" parent="3" name="ip">
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="62" parent="3" name="viewprourl">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="63" parent="3" name="apifilename">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+        <default-expression>&apos;uc.php&apos;</default-expression>
+      </column>
+      <column id="64" parent="3" name="charset">
+        <mandatory>1</mandatory>
+        <data-type>varchar(8)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="65" parent="3" name="dbcharset">
+        <mandatory>1</mandatory>
+        <data-type>varchar(8)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="66" parent="3" name="synlogin">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="67" parent="3" name="recvnote">
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="68" parent="3" name="extra">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="69" parent="3" name="tagtemplates">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="70" parent="3" name="allowips">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <key id="71" parent="3" name="PRIMARY">
+        <columns>appid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="72" parent="4" name="id">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6) unsigned</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="73" parent="4" name="admin">
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="74" parent="4" name="find">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="75" parent="4" name="replacement">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="76" parent="4" name="findpattern">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <index id="77" parent="4" name="find">
+        <columns>find</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="78" parent="4" name="find">
+        <columns>find</columns>
+        <underlying-index>find</underlying-index>
+      </key>
+      <key id="79" parent="4" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="80" parent="5" name="id">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="81" parent="5" name="domain">
+        <mandatory>1</mandatory>
+        <data-type>char(40)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="82" parent="5" name="ip">
+        <mandatory>1</mandatory>
+        <data-type>char(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <key id="83" parent="5" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="84" parent="6" name="ip">
+        <mandatory>1</mandatory>
+        <data-type>char(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="85" parent="6" name="count">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="86" parent="6" name="lastupdate">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="87" parent="6" name="PRIMARY">
+        <columns>ip</columns>
+        <primary>1</primary>
+      </key>
+      <column id="88" parent="7" name="feedid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="89" parent="7" name="appid">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="90" parent="7" name="icon">
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="91" parent="7" name="uid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="92" parent="7" name="username">
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="93" parent="7" name="dateline">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="94" parent="7" name="hash_template">
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="95" parent="7" name="hash_data">
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="96" parent="7" name="title_template">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="97" parent="7" name="title_data">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="98" parent="7" name="body_template">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="99" parent="7" name="body_data">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="100" parent="7" name="body_general">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="101" parent="7" name="image_1">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="102" parent="7" name="image_1_link">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="103" parent="7" name="image_2">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="104" parent="7" name="image_2_link">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="105" parent="7" name="image_3">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="106" parent="7" name="image_3_link">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="107" parent="7" name="image_4">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="108" parent="7" name="image_4_link">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="109" parent="7" name="target_ids">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <index id="110" parent="7" name="uid">
+        <columns>uid
+dateline</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="111" parent="7" name="PRIMARY">
+        <columns>feedid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="112" parent="8" name="uid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="113" parent="8" name="friendid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="114" parent="8" name="direction">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="115" parent="8" name="version">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="116" parent="8" name="delstatus">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="117" parent="8" name="comment">
+        <mandatory>1</mandatory>
+        <data-type>char(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <index id="118" parent="8" name="friendid">
+        <columns>friendid</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="119" parent="8" name="uid">
+        <columns>uid</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="120" parent="8" name="PRIMARY">
+        <columns>version</columns>
+        <primary>1</primary>
+      </key>
+      <column id="121" parent="9" name="mailid">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="122" parent="9" name="touid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="123" parent="9" name="tomail">
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)</data-type>
+      </column>
+      <column id="124" parent="9" name="frommail">
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+      </column>
+      <column id="125" parent="9" name="subject">
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="126" parent="9" name="message">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="127" parent="9" name="charset">
+        <mandatory>1</mandatory>
+        <data-type>varchar(15)</data-type>
+      </column>
+      <column id="128" parent="9" name="htmlon">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="129" parent="9" name="level">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="130" parent="9" name="dateline">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="131" parent="9" name="failures">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(3) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="132" parent="9" name="appid">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="133" parent="9" name="appid">
+        <columns>appid</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="134" parent="9" name="level">
+        <columns>level
+failures</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="135" parent="9" name="PRIMARY">
+        <columns>mailid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="136" parent="10" name="uid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+      </column>
+      <column id="137" parent="10" name="blacklist">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <key id="138" parent="10" name="PRIMARY">
+        <columns>uid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="139" parent="11" name="uid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="140" parent="11" name="username">
+        <mandatory>1</mandatory>
+        <data-type>char(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="141" parent="11" name="password">
+        <mandatory>1</mandatory>
+        <data-type>char(32)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="142" parent="11" name="email">
+        <mandatory>1</mandatory>
+        <data-type>char(32)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="143" parent="11" name="myid">
+        <mandatory>1</mandatory>
+        <data-type>char(30)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="144" parent="11" name="myidkey">
+        <mandatory>1</mandatory>
+        <data-type>char(16)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="145" parent="11" name="regip">
+        <mandatory>1</mandatory>
+        <data-type>char(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="146" parent="11" name="regdate">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="147" parent="11" name="lastloginip">
+        <mandatory>1</mandatory>
+        <data-type>int(10)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="148" parent="11" name="lastlogintime">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="149" parent="11" name="salt">
+        <mandatory>1</mandatory>
+        <data-type>char(6)</data-type>
+      </column>
+      <column id="150" parent="11" name="secques">
+        <mandatory>1</mandatory>
+        <data-type>char(8)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <index id="151" parent="11" name="email">
+        <columns>email</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="152" parent="11" name="username">
+        <columns>username</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="153" parent="11" name="PRIMARY">
+        <columns>uid</columns>
+        <primary>1</primary>
+      </key>
+      <key id="154" parent="11" name="username">
+        <columns>username</columns>
+        <underlying-index>username</underlying-index>
+      </key>
+      <column id="155" parent="12" name="appid">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6) unsigned</data-type>
+      </column>
+      <column id="156" parent="12" name="username">
+        <mandatory>1</mandatory>
+        <data-type>char(15)</data-type>
+      </column>
+      <key id="157" parent="12" name="PRIMARY">
+        <columns>appid
+username</columns>
+        <primary>1</primary>
+      </key>
+      <column id="158" parent="13" name="uid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+      </column>
+      <key id="159" parent="13" name="PRIMARY">
+        <columns>uid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="160" parent="14" name="noteid">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="161" parent="14" name="operation">
+        <mandatory>1</mandatory>
+        <data-type>char(32)</data-type>
+      </column>
+      <column id="162" parent="14" name="closed">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="163" parent="14" name="totalnum">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="164" parent="14" name="succeednum">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="165" parent="14" name="getdata">
+        <mandatory>1</mandatory>
+        <data-type>mediumtext</data-type>
+      </column>
+      <column id="166" parent="14" name="postdata">
+        <mandatory>1</mandatory>
+        <data-type>mediumtext</data-type>
+      </column>
+      <column id="167" parent="14" name="dateline">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="168" parent="14" name="pri">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(3)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="169" parent="14" name="closed">
+        <columns>closed
+pri
+noteid</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="170" parent="14" name="dateline">
+        <columns>dateline</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="171" parent="14" name="PRIMARY">
+        <columns>noteid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="172" parent="15" name="pmid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="173" parent="15" name="plid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="174" parent="15" name="plid">
+        <columns>plid</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="175" parent="15" name="PRIMARY">
+        <columns>pmid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="176" parent="16" name="plid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="177" parent="16" name="authorid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="178" parent="16" name="pmtype">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="179" parent="16" name="subject">
+        <mandatory>1</mandatory>
+        <data-type>varchar(80)</data-type>
+      </column>
+      <column id="180" parent="16" name="members">
+        <mandatory>1</mandatory>
+        <data-type>smallint(5) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="181" parent="16" name="min_max">
+        <mandatory>1</mandatory>
+        <data-type>varchar(17)</data-type>
+      </column>
+      <column id="182" parent="16" name="dateline">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="183" parent="16" name="lastmessage">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <index id="184" parent="16" name="authorid">
+        <columns>authorid
+dateline</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="185" parent="16" name="min_max">
+        <columns>min_max</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="186" parent="16" name="pmtype">
+        <columns>pmtype</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="187" parent="16" name="PRIMARY">
+        <columns>plid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="188" parent="17" name="plid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="189" parent="17" name="uid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="190" parent="17" name="isnew">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="191" parent="17" name="pmnum">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="192" parent="17" name="lastupdate">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="193" parent="17" name="lastdateline">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="194" parent="17" name="isnew">
+        <columns>isnew</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="195" parent="17" name="lastdateline">
+        <columns>uid
+lastdateline</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="196" parent="17" name="lastupdate">
+        <columns>uid
+lastupdate</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="197" parent="17" name="PRIMARY">
+        <columns>plid
+uid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="198" parent="18" name="pmid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="199" parent="18" name="plid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="200" parent="18" name="authorid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="201" parent="18" name="message">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="202" parent="18" name="delstatus">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="203" parent="18" name="dateline">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="204" parent="18" name="dateline">
+        <columns>plid
+dateline</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="205" parent="18" name="plid">
+        <columns>plid
+delstatus
+dateline</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="206" parent="18" name="PRIMARY">
+        <columns>pmid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="207" parent="19" name="pmid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="208" parent="19" name="plid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="209" parent="19" name="authorid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="210" parent="19" name="message">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="211" parent="19" name="delstatus">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="212" parent="19" name="dateline">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="213" parent="19" name="dateline">
+        <columns>plid
+dateline</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="214" parent="19" name="plid">
+        <columns>plid
+delstatus
+dateline</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="215" parent="19" name="PRIMARY">
+        <columns>pmid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="216" parent="20" name="pmid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="217" parent="20" name="plid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="218" parent="20" name="authorid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="219" parent="20" name="message">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="220" parent="20" name="delstatus">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="221" parent="20" name="dateline">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="222" parent="20" name="dateline">
+        <columns>plid
+dateline</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="223" parent="20" name="plid">
+        <columns>plid
+delstatus
+dateline</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="224" parent="20" name="PRIMARY">
+        <columns>pmid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="225" parent="21" name="pmid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="226" parent="21" name="plid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="227" parent="21" name="authorid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="228" parent="21" name="message">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="229" parent="21" name="delstatus">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="230" parent="21" name="dateline">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="231" parent="21" name="dateline">
+        <columns>plid
+dateline</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="232" parent="21" name="plid">
+        <columns>plid
+delstatus
+dateline</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="233" parent="21" name="PRIMARY">
+        <columns>pmid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="234" parent="22" name="pmid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="235" parent="22" name="plid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="236" parent="22" name="authorid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="237" parent="22" name="message">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="238" parent="22" name="delstatus">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="239" parent="22" name="dateline">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="240" parent="22" name="dateline">
+        <columns>plid
+dateline</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="241" parent="22" name="plid">
+        <columns>plid
+delstatus
+dateline</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="242" parent="22" name="PRIMARY">
+        <columns>pmid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="243" parent="23" name="pmid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="244" parent="23" name="plid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="245" parent="23" name="authorid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="246" parent="23" name="message">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="247" parent="23" name="delstatus">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="248" parent="23" name="dateline">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="249" parent="23" name="dateline">
+        <columns>plid
+dateline</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="250" parent="23" name="plid">
+        <columns>plid
+delstatus
+dateline</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="251" parent="23" name="PRIMARY">
+        <columns>pmid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="252" parent="24" name="pmid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="253" parent="24" name="plid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="254" parent="24" name="authorid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="255" parent="24" name="message">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="256" parent="24" name="delstatus">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="257" parent="24" name="dateline">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="258" parent="24" name="dateline">
+        <columns>plid
+dateline</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="259" parent="24" name="plid">
+        <columns>plid
+delstatus
+dateline</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="260" parent="24" name="PRIMARY">
+        <columns>pmid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="261" parent="25" name="pmid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="262" parent="25" name="plid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="263" parent="25" name="authorid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="264" parent="25" name="message">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="265" parent="25" name="delstatus">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="266" parent="25" name="dateline">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="267" parent="25" name="dateline">
+        <columns>plid
+dateline</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="268" parent="25" name="plid">
+        <columns>plid
+delstatus
+dateline</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="269" parent="25" name="PRIMARY">
+        <columns>pmid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="270" parent="26" name="pmid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="271" parent="26" name="plid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="272" parent="26" name="authorid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="273" parent="26" name="message">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="274" parent="26" name="delstatus">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="275" parent="26" name="dateline">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="276" parent="26" name="dateline">
+        <columns>plid
+dateline</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="277" parent="26" name="plid">
+        <columns>plid
+delstatus
+dateline</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="278" parent="26" name="PRIMARY">
+        <columns>pmid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="279" parent="27" name="pmid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="280" parent="27" name="plid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="281" parent="27" name="authorid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="282" parent="27" name="message">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <column id="283" parent="27" name="delstatus">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="284" parent="27" name="dateline">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="285" parent="27" name="dateline">
+        <columns>plid
+dateline</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="286" parent="27" name="plid">
+        <columns>plid
+delstatus
+dateline</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="287" parent="27" name="PRIMARY">
+        <columns>pmid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="288" parent="28" name="uid">
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="289" parent="28" name="username">
+        <mandatory>1</mandatory>
+        <data-type>char(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="290" parent="28" name="appid">
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="291" parent="28" name="dateline">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="292" parent="28" name="admin">
+        <mandatory>1</mandatory>
+        <data-type>char(15)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="293" parent="28" name="username">
+        <columns>username
+appid</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="294" parent="28" name="username">
+        <columns>username
+appid</columns>
+        <underlying-index>username</underlying-index>
+      </key>
+      <column id="295" parent="29" name="k">
+        <mandatory>1</mandatory>
+        <data-type>varchar(32)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="296" parent="29" name="v">
+        <mandatory>1</mandatory>
+        <data-type>text</data-type>
+      </column>
+      <key id="297" parent="29" name="PRIMARY">
+        <columns>k</columns>
+        <primary>1</primary>
+      </key>
+      <column id="298" parent="30" name="sqlid">
+        <mandatory>1</mandatory>
+        <data-type>char(6)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="299" parent="30" name="data">
+        <mandatory>1</mandatory>
+        <data-type>char(100)</data-type>
+      </column>
+      <column id="300" parent="30" name="expiry">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <index id="301" parent="30" name="expiry">
+        <columns>expiry</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="302" parent="30" name="PRIMARY">
+        <columns>sqlid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="303" parent="31" name="tagname">
+        <mandatory>1</mandatory>
+        <data-type>char(20)</data-type>
+      </column>
+      <column id="304" parent="31" name="appid">
+        <mandatory>1</mandatory>
+        <data-type>smallint(6) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="305" parent="31" name="data">
+        <data-type>mediumtext</data-type>
+      </column>
+      <column id="306" parent="31" name="expiration">
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <index id="307" parent="31" name="tagname">
+        <columns>tagname
+appid</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <column id="308" parent="32" name="name">
+        <mandatory>1</mandatory>
+        <data-type>char(32)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="309" parent="32" name="value">
+        <mandatory>1</mandatory>
+        <data-type>char(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <key id="310" parent="32" name="PRIMARY">
+        <columns>name</columns>
+        <primary>1</primary>
+      </key>
+      <column id="311" parent="33" name="id">
+        <comment>分类ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="312" parent="33" name="name">
+        <comment>标志</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(30)</data-type>
+      </column>
+      <column id="313" parent="33" name="title">
+        <comment>标题</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="314" parent="33" name="pid">
+        <comment>上级分类ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(10)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="315" parent="33" name="sort">
+        <comment>排序（同级有效）</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;100&apos;</default-expression>
+      </column>
+      <column id="316" parent="33" name="list_row">
+        <comment>列表每页行数</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(3) unsigned</data-type>
+        <default-expression>&apos;10&apos;</default-expression>
+      </column>
+      <column id="317" parent="33" name="meta_title">
+        <comment>SEO的网页标题</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="318" parent="33" name="keywords">
+        <comment>关键字</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="319" parent="33" name="description">
+        <comment>描述</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="320" parent="33" name="template_lists">
+        <comment>列表页模板</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="321" parent="33" name="template_detail">
+        <comment>详情页模板</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="322" parent="33" name="template_edit">
+        <comment>编辑页模板</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="323" parent="33" name="link_id">
+        <comment>外链</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="324" parent="33" name="allow">
+        <comment>是否允许发布内容</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(3) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="325" parent="33" name="display">
+        <comment>可见性</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(3) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="326" parent="33" name="check">
+        <comment>发布的文章是否需要审核</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(3) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="327" parent="33" name="create_time">
+        <comment>创建时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="328" parent="33" name="update_time">
+        <comment>更新时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="329" parent="33" name="status">
+        <comment>数据状态</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="330" parent="33" name="icon">
+        <comment>分类图标</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <index id="331" parent="33" name="pid">
+        <columns>pid</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <key id="332" parent="33" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="333" parent="34" name="Id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="334" parent="34" name="site_name">
+        <comment>站点名称</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="335" parent="34" name="site_domain">
+        <comment>站点域名</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(50)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="336" parent="34" name="site_title">
+        <comment>站点标题</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="337" parent="34" name="site_keywords">
+        <comment>站点关键词</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="338" parent="34" name="site_description">
+        <comment>站点描述</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="339" parent="34" name="site_head">
+        <comment>站点head信息</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="340" parent="34" name="site_footer">
+        <comment>站点底部信息</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="341" parent="34" name="site_status">
+        <comment>站点状态</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1) unsigned</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="342" parent="34" name="site_closetip">
+        <comment>站点关闭提示</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="343" parent="34" name="smtp_host">
+        <comment>SMTP 服务器地址</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="344" parent="34" name="smtp_port">
+        <comment>SMTP 端口</comment>
+        <mandatory>1</mandatory>
+        <data-type>smallint(5) unsigned</data-type>
+        <default-expression>&apos;25&apos;</default-expression>
+      </column>
+      <column id="345" parent="34" name="smtp_user">
+        <comment>SMTP 用户名</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="346" parent="34" name="smtp_from">
+        <comment>发件人邮箱账号</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="347" parent="34" name="smtp_pwd">
+        <comment>发件人邮箱密码</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(16)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="348" parent="34" name="smtp_to">
+        <comment>收件人测试邮箱</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(100)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <key id="349" parent="34" name="PRIMARY">
+        <columns>Id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="350" parent="35" name="id">
+        <comment>文档ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="351" parent="35" name="title">
+        <comment>标题</comment>
+        <mandatory>1</mandatory>
+        <data-type>char(80)</data-type>
+      </column>
+      <column id="352" parent="35" name="content">
+        <comment>详细内容</comment>
+        <mandatory>1</mandatory>
+        <data-type>longtext</data-type>
+      </column>
+      <column id="353" parent="35" name="abstract">
+        <comment>摘要</comment>
+        <mandatory>1</mandatory>
+        <data-type>char(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="354" parent="35" name="uid">
+        <comment>用户ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="355" parent="35" name="pid">
+        <comment>父ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="356" parent="35" name="mid">
+        <comment>模型ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1) unsigned</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="357" parent="35" name="keywords">
+        <comment>SEO关键字</comment>
+        <mandatory>1</mandatory>
+        <data-type>char(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="358" parent="35" name="description">
+        <comment>SEO描述</comment>
+        <mandatory>1</mandatory>
+        <data-type>char(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="359" parent="35" name="meta_title">
+        <comment>SEO网页标题</comment>
+        <mandatory>1</mandatory>
+        <data-type>char(120)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="360" parent="35" name="time">
+        <comment>发布时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>char(16)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="361" parent="35" name="logo">
+        <comment>logo图片</comment>
+        <mandatory>1</mandatory>
+        <data-type>char(80)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="362" parent="35" name="picture">
+        <comment>大图</comment>
+        <mandatory>1</mandatory>
+        <data-type>char(80)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="363" parent="35" name="file">
+        <comment>附件</comment>
+        <mandatory>1</mandatory>
+        <data-type>char(80)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="364" parent="35" name="link">
+        <comment>外链</comment>
+        <mandatory>1</mandatory>
+        <data-type>char(80)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="365" parent="35" name="check">
+        <comment>审核</comment>
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;Y&apos;, &apos;N&apos;)</data-type>
+        <default-expression>&apos;Y&apos;</default-expression>
+      </column>
+      <column id="366" parent="35" name="recommend">
+        <comment>推荐</comment>
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;Y&apos;, &apos;N&apos;)</data-type>
+        <default-expression>&apos;N&apos;</default-expression>
+      </column>
+      <column id="367" parent="35" name="sort">
+        <comment>排序</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;100&apos;</default-expression>
+      </column>
+      <column id="368" parent="35" name="view">
+        <comment>浏览量</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="369" parent="35" name="comments">
+        <comment>评论数</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="370" parent="35" name="template">
+        <comment>详情模板</comment>
+        <mandatory>1</mandatory>
+        <data-type>char(60)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="371" parent="35" name="create_time">
+        <comment>创建时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="372" parent="35" name="update_time">
+        <comment>更新时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="373" parent="35" name="deadline">
+        <comment>截至时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>char(35)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="374" parent="35" name="status">
+        <comment>数据状态</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="375" parent="35" name="level">
+        <comment>级别</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="376" parent="35" name="display">
+        <comment>显示</comment>
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;Y&apos;, &apos;N&apos;)</data-type>
+        <default-expression>&apos;Y&apos;</default-expression>
+      </column>
+      <column id="377" parent="35" name="state">
+        <comment>是否显示子菜单</comment>
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;Y&apos;, &apos;N&apos;)</data-type>
+        <default-expression>&apos;Y&apos;</default-expression>
+      </column>
+      <key id="378" parent="35" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <column id="379" parent="36" name="uid">
+        <comment>用户ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="380" parent="36" name="username">
+        <comment>用户名</comment>
+        <mandatory>1</mandatory>
+        <data-type>char(16)</data-type>
+      </column>
+      <column id="381" parent="36" name="password">
+        <comment>密码</comment>
+        <mandatory>1</mandatory>
+        <data-type>char(40)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="382" parent="36" name="mobile">
+        <comment>用户手机</comment>
+        <mandatory>1</mandatory>
+        <data-type>char(15)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="383" parent="36" name="nickname">
+        <comment>昵称</comment>
+        <mandatory>1</mandatory>
+        <data-type>char(16)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="384" parent="36" name="photo">
+        <comment>头像</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(120)</data-type>
+      </column>
+      <column id="385" parent="36" name="email">
+        <comment>电子邮箱</comment>
+        <mandatory>1</mandatory>
+        <data-type>char(32)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="386" parent="36" name="sex">
+        <comment>性别</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="387" parent="36" name="birthday">
+        <comment>生日</comment>
+        <mandatory>1</mandatory>
+        <data-type>date</data-type>
+        <default-expression>&apos;0000-00-00&apos;</default-expression>
+      </column>
+      <column id="388" parent="36" name="qq">
+        <comment>qq号</comment>
+        <mandatory>1</mandatory>
+        <data-type>char(10)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="389" parent="36" name="score">
+        <comment>用户积分</comment>
+        <mandatory>1</mandatory>
+        <data-type>mediumint(8)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="390" parent="36" name="login">
+        <comment>登录次数</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="391" parent="36" name="reg_ip">
+        <comment>注册IP</comment>
+        <mandatory>1</mandatory>
+        <data-type>char(20)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="392" parent="36" name="reg_time">
+        <comment>注册时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="393" parent="36" name="last_login_ip">
+        <comment>最后登录IP</comment>
+        <mandatory>1</mandatory>
+        <data-type>char(20)</data-type>
+      </column>
+      <column id="394" parent="36" name="last_login_time">
+        <comment>最后登录时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+      </column>
+      <column id="395" parent="36" name="status">
+        <comment>状态</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="396" parent="36" name="type">
+        <comment>类型</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(4)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="397" parent="36" name="qq_openid">
+        <comment>QQ openID</comment>
+        <mandatory>1</mandatory>
+        <data-type>char(32)</data-type>
+      </column>
+      <column id="398" parent="36" name="qq_access_token">
+        <comment>QQ access_token</comment>
+        <mandatory>1</mandatory>
+        <data-type>char(32)</data-type>
+      </column>
+      <index id="399" parent="36" name="status">
+        <columns>status</columns>
+        <desc-columns></desc-columns>
+      </index>
+      <index id="400" parent="36" name="username">
+        <columns>username</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="401" parent="36" name="PRIMARY">
+        <columns>uid</columns>
+        <primary>1</primary>
+      </key>
+      <key id="402" parent="36" name="username">
+        <columns>username</columns>
+        <underlying-index>username</underlying-index>
+      </key>
+      <column id="403" parent="37" name="mid">
+        <comment>菜单ID</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(3) unsigned</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="404" parent="37" name="title">
+        <comment>标题</comment>
+        <mandatory>1</mandatory>
+        <data-type>char(30)</data-type>
+      </column>
+      <column id="405" parent="37" name="pid">
+        <comment>父菜单</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(3)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="406" parent="37" name="url">
+        <comment>链接</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(2000)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="407" parent="37" name="level">
+        <comment>级别</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(1) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="408" parent="37" name="sort">
+        <comment>排序</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(2) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="409" parent="37" name="display">
+        <comment>显示</comment>
+        <mandatory>1</mandatory>
+        <data-type>enum(&apos;Y&apos;, &apos;N&apos;)</data-type>
+        <default-expression>&apos;Y&apos;</default-expression>
+      </column>
+      <column id="410" parent="37" name="create_time">
+        <comment>创建时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(10)</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <key id="411" parent="37" name="PRIMARY">
+        <columns>mid</columns>
+        <primary>1</primary>
+      </key>
+      <column id="412" parent="38" name="id">
+        <comment>链接唯一标识</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11) unsigned</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="413" parent="38" name="url">
+        <comment>链接地址</comment>
+        <mandatory>1</mandatory>
+        <data-type>char(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="414" parent="38" name="text">
+        <comment>链接文本</comment>
+        <mandatory>1</mandatory>
+        <data-type>char(100)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="415" parent="38" name="description">
+        <comment>链接描述</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="416" parent="38" name="image">
+        <comment>链接图片</comment>
+        <mandatory>1</mandatory>
+        <data-type>varchar(255)</data-type>
+        <default-expression>&apos;&apos;</default-expression>
+      </column>
+      <column id="417" parent="38" name="type">
+        <comment>链接类型</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(2) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="418" parent="38" name="status">
+        <comment>状态</comment>
+        <mandatory>1</mandatory>
+        <data-type>tinyint(2)</data-type>
+        <default-expression>&apos;1&apos;</default-expression>
+      </column>
+      <column id="419" parent="38" name="create_time">
+        <comment>创建时间</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(10) unsigned</data-type>
+        <default-expression>&apos;0&apos;</default-expression>
+      </column>
+      <column id="420" parent="38" name="sort">
+        <comment>排序</comment>
+        <mandatory>1</mandatory>
+        <data-type>int(11) unsigned</data-type>
+        <default-expression>&apos;100&apos;</default-expression>
+      </column>
+      <index id="421" parent="38" name="url">
+        <columns>url</columns>
+        <desc-columns></desc-columns>
+        <unique>1</unique>
+      </index>
+      <key id="422" parent="38" name="PRIMARY">
+        <columns>id</columns>
+        <primary>1</primary>
+      </key>
+      <key id="423" parent="38" name="url">
+        <columns>url</columns>
+        <underlying-index>url</underlying-index>
+      </key>
+    </database-model>
+  </data-source>
+</component>
