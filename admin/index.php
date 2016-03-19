@@ -56,7 +56,7 @@
 
 	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
 	// define('ENVIRONMENT', 'development');
-	define('YLOG_VERSION', 'V1.5.160227');
+	define('YLOG_VERSION', 'V1.0.1');
 	define('DB_PREFIX', 'Ylog_');
 
 	// 定义网站地址
