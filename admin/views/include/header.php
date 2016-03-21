@@ -37,10 +37,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         编辑器采用 <a href="http://kindeditor.net/" target="_blank">kindeditor</a><i>V4.1.10</i>
       </p>
   </div>
-  <div id="updatepwd" style="padding:20px;line-height:35px;"></div>
-  <div id="userinofo"></div>
-  <!-- <div id="updatepwd" title="修改密码" style="padding:5px;display:none">Dialog Content.</div> -->
 </div>
+<div id="updatepwd" style="padding:20px;line-height:35px;"></div>
+<div id="userinofo"></div>
 <script>
 function userinofo(){
   $('#userinofo').window({

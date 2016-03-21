@@ -1,3 +1,39 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed'); ?>
 
 ERROR - 2016-03-20 01:29:43 --> Severity: Error --> Class 'Ylog_controller' not found E:\WWW\Ylog\Ylog\admin\controllers\Admin.php 9
+ERROR - 2016-03-20 03:35:15 --> 404 Page Not Found: Src/js
+ERROR - 2016-03-20 03:35:15 --> 404 Page Not Found: Admin/index.php
+ERROR - 2016-03-20 03:35:15 --> 404 Page Not Found: Admin/index.php
+ERROR - 2016-03-20 03:35:15 --> 404 Page Not Found: Admin/index.php
+ERROR - 2016-03-20 03:42:02 --> 404 Page Not Found: Admin/document
+ERROR - 2016-03-20 03:42:02 --> 404 Page Not Found: Admin/menu
+ERROR - 2016-03-20 03:42:02 --> 404 Page Not Found: Admin/menu
+ERROR - 2016-03-20 03:42:02 --> 404 Page Not Found: Admin/menu
+ERROR - 2016-03-20 03:42:02 --> 404 Page Not Found: Admin/menu
+ERROR - 2016-03-20 03:42:02 --> 404 Page Not Found: Admin/document
+ERROR - 2016-03-20 03:44:48 --> 404 Page Not Found: Admin/menu
+ERROR - 2016-03-20 03:44:48 --> 404 Page Not Found: Admin/document
+ERROR - 2016-03-20 03:44:48 --> 404 Page Not Found: Admin/menu
+ERROR - 2016-03-20 03:44:48 --> 404 Page Not Found: Admin/document
+ERROR - 2016-03-20 03:44:48 --> 404 Page Not Found: Admin/menu
+ERROR - 2016-03-20 03:44:48 --> 404 Page Not Found: Admin/menu
+ERROR - 2016-03-20 03:45:00 --> 404 Page Not Found: Admin/menu
+ERROR - 2016-03-20 03:45:00 --> 404 Page Not Found: Admin/document
+ERROR - 2016-03-20 03:45:00 --> 404 Page Not Found: Admin/menu
+ERROR - 2016-03-20 03:45:01 --> 404 Page Not Found: Admin/document
+ERROR - 2016-03-20 03:45:01 --> 404 Page Not Found: Admin/menu
+ERROR - 2016-03-20 03:45:01 --> 404 Page Not Found: Admin/menu
+ERROR - 2016-03-20 03:45:43 --> 404 Page Not Found: Admin/document
+ERROR - 2016-03-20 03:45:43 --> 404 Page Not Found: Admin/menu
+ERROR - 2016-03-20 03:45:43 --> 404 Page Not Found: Admin/menu
+ERROR - 2016-03-20 03:45:43 --> 404 Page Not Found: Admin/menu
+ERROR - 2016-03-20 03:45:43 --> 404 Page Not Found: Admin/document
+ERROR - 2016-03-20 03:45:43 --> 404 Page Not Found: Admin/menu
+ERROR - 2016-03-20 03:45:50 --> 404 Page Not Found: Admin/menu
+ERROR - 2016-03-20 03:45:50 --> 404 Page Not Found: Admin/menu
+ERROR - 2016-03-20 03:45:50 --> 404 Page Not Found: Admin/document
+ERROR - 2016-03-20 03:45:50 --> 404 Page Not Found: Admin/document
+ERROR - 2016-03-20 03:45:50 --> 404 Page Not Found: Admin/menu
+ERROR - 2016-03-20 03:45:50 --> 404 Page Not Found: Admin/menu
+ERROR - 2016-03-20 22:20:58 --> 404 Page Not Found: Form/manage
+ERROR - 2016-03-20 22:20:58 --> 404 Page Not Found: Download/manage

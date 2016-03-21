@@ -41,15 +41,6 @@ class Admin extends Ylog_controller {
     $data['agent'] = $agent;
     $data['platform'] = $this->agent->platform();
 
-    $this->load->model('document_model');
-    $data['docsum'] = $this->document_model->get_sum();
-
-    $this->load->model('category_model');
-    $data['catsum'] = $this->category_model->get_sum();
-
-    $this->load->model('link_model');
-    $data['linksum'] = $this->link_model->get_sum();
-
     $this->_view('index',$data);
   }
   public function site(){

@@ -19,11 +19,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
             <table width="100%">
               <tbody>
                 <tr>
-                  <td width="15%" align="right">站点统计：</td>
-                  <td>
-                    文章 <?=$docsum?> 篇，栏目 <?=$catsum?> 个，链接 <?=$linksum?>个</td>
-                </tr>
-                <tr>
                   <td align="right">网站域名：</td>
                   <td>
                     <?php echo $_SERVER['HTTP_HOST']; ?></td>

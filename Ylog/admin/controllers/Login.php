@@ -29,7 +29,7 @@ class Login extends CI_Controller
   public function index()
   {
     if ($this->session->userdata("uid")) {
-      redirect('/admin');
+      redirect();
     }
     else
     {
@@ -106,7 +106,7 @@ class Login extends CI_Controller
       $this->_model->update_user($uid,$data);
       $url = $this->input->get('url');//跳转地址
       if( ! $url){
-        $url = '/admin';
+        $url = '';
       }
       $url = site_url($url);
       $this->output
